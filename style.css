@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ........................Main Container(including header,main,aside and footer)..................... */
+#main-container {
+    height: 100vh;
+    background-color: #0c0c3a;
+    overflow-y: auto;
+}
+
+/* .............................Header.................................. */
+#header {
+    height: 10vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    align-items: center;
+    display: flex;
+    width: 25%;
+    /* border: 2px solid green; */
+}
+
+#logo img {
+    width: 70%;
+}
+
+#fav {
+    margin-left: 20%;
+    color: hsl(252, 5%, 62%);
+    font-size: 1.5rem;
+}
+
+#search-bar-user-img {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    /* border: 2px solid green; */
+    align-items: center;
+}
+
+#search-bar {
+    padding: 1.5%;
+    background-color: #01011b;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: 6%;
+}
+
+#search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: hsl(252, 5%, 62%);
+    font-size: 1.1rem;
+    width: 55%;
+}
+
+i {
+    font-size: 24px;
+    color: #646072;
+}
+
+#user {
+    width: 9%;
+    /* border: 2px solid yellow; */
+    margin-left: 8%;
+}
+
+#user img {
+    width: 95%;
+    border-radius: 50%;
+}
+
+/* ..........  for responsiveness................*/
+#for-responsiveness {
+    display: flex;
+    /* border: 2px solid yellow; */
+    margin: -4px 4%;
+}
+ /* ...................................................................... */
+ /* ........................MAIN.................... */
+ main{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    height: 90vh;
+    width: 60%;
+    overflow-y: auto;
+    /* border: 2px solid green; */
+ }
+ main::-webkit-scrollbar{
+    display: none;
+ }
+ /* ................................................... */
+ .boxes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    /* border: 2px solid orange; */
+    justify-content: space-around;
+ }
+ /* ..........................Corousel.......................... */
+ #box1{
+    width: 70%;
+    /* filter: drop-shadow(4px 4px 4px red); */
+    /* border: 2px solid palevioletred; */
+ }
+ #box1:hover{
+    filter: drop-shadow(4px 4px 4px red);
+ }
+ /* ................latest release................ */
+ #latest-release-card-1-2{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+ }
+ #latest-release-card-3-4{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .release-cards{
+    display: flex;
+    width: 48%;
+    /* border: 2px solid white; */
+ }
+ .release-img-names{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+
+ }
+ .release-img-names img{
+    width:44%;
+    border-radius: 20px;
+ }
+ .options{
+    margin-left: 30px;
+    width: 10%;
+ }
+ .name{
+    margin-left: 15px;
+ }
+ .options .btn{
+    background: transparent;
+    border: none;
+    outline: none;
+
+    }
+.options .btn:hover{
+    background-color: #0c0c3a;
+}
+/* .....................................Popular Artists............................................ */
+#artists-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+}
+.artists{
+    width: 14%;
+    /* border: 2px solid red; */
+
+}
+.artists p{
+    margin-bottom: 0;
+}
+.artists a img{
+    width:100%;
+    border-radius: 50%
+}
+/* .......................................Stations................................................ */
+#station-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+}
+.stations{
+    width: 15%;
+    /* border: 2px solid red; */
+
+}
+.stations p{
+    margin-bottom: 0;
+}
+.stations img{
+    width: 100%;
+    border-radius: 50%;
+    filter: blur(0.6px);
+    /* opacity: 0.7 */
+}
+.stations img:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+   transition: ease-in;
+   filter: drop-shadow(4px 4px 4px red);
+   transition: 0.4s;
+}
+/* ........................................Genre.................................. */
+#box5{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.genre{
+    width: 30%;
+}
+.genre img{
+    width: 100%;
+    filter: blur(0.6px);
+    border-radius: 10px;
+}
+.genre img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in;
+    filter: drop-shadow(4px 4px 4px red);
+    transition: 0.4s;
+
+ }
+/* .....................................Latest hindi............................... */
+#latest-hindi-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+}
+.latest-hindi{
+    width: 15%;
+    /* border: 2px solid red; */
+
+}
+.latest-hindi p{
+    margin-bottom: 0;
+}
+.latest-hindi img{
+    /* height: 95%; */
+    width: 100%;
+    border-radius: 50%;
+}
+.latest-hindi img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in;
+    filter: drop-shadow(4px 4px 4px red);
+    transition: 0.4s;
+
+ }
+/* ...............................Latest English........................................ */
+#box7{
+    margin-bottom: 0.5rem;
+}
+#latest-english-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+}
+.latest-english{
+    width: 15%;
+    /* border: 2px solid red; */
+
+}
+.latest-english p{
+    margin-bottom: 0;
+}
+.latest-english img{
+    /* height: 95%; */
+    width: 100%;
+    border-radius: 50%;
+}
+.latest-english img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    /* transition: ease-in; */
+    filter: drop-shadow(4px 4px 4px red);
+    transition: 0.4s;
+}
+/* ......................Aside Responsive..................... */
+#aside-Responsive{
+    flex-direction: column;
+      width:100%;
+    /* border: 2px solid yellow; */
+    /* overflow-y: auto; */
+    margin-left: 3%;
+    color: aliceblue;
+    display: none;
+}
+
+
+
+/* /////////////////////////////////////////////Aside/////////////////////////////////////////////// */
+aside{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    /* border: 2px solid yellow; */
+    overflow-y: auto;
+    margin-left: 3%;
+    color: aliceblue;
+}
+aside::-webkit-scrollbar{
+display: none;
+}
+#queue-head{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-group button{
+    color: rgb(0, 255, 115);
+    background: transparent;
+    font-size: medium;
+    border: none;
+    outline: none;
+    border-radius: 20%;
+}
+.btn-group button:hover{
+    background-color: #0c0c3a;
+    /* color:rgb(0, 255, 115); */
+}
+/* Queue main */
+#queue-main{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 2px solid pink; */
+}
+.queues{
+    padding:15px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 2px solid green; */
+    align-items: center;
+    background-color: #080026;
+    margin: 6px 0px;
+    border-radius: 20px;
+}
+.queues:hover{
+    filter: drop-shadow(4px 4px 4px red);
+}
+.artist-container{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 85%;
+}
+.artist-container img{
+    width: 20%;
+    border-radius: 10px;
+}
+.currently-on-song{
+    transform: rotate(-90deg);
+    color: #00ff91;
+}
+i:hover{
+    scale: 0.9;
+}
+/* ............................FOOTER(Our playback options)......................................... */
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    left: 0px;
+    /* height: 80px; */
+    bottom: 2px;
+    width: 100%;
+    /* border: 2px solid #00ff91; */
+    position: fixed;
+    background-color: #101122;
+}
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track {
+padding: 5px;
+opacity: 0.8;
+transition: opacity .2s;
+}
+
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+opacity: 1.0;
+}
+
+.slider_container {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 25%;
+}
+
+.seek_slider, .volume_slider {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+height: 5px;
+background: #41a4a2;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 15px;
+height: 15px;
+background: white;
+border: 3px solid #3774FF;
+cursor: grab;
+border-radius: 100%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+opacity: 1.0;
+}
+
+.seek_slider-play {
+width: 60%;
+}
+.slider_container-play{
+    width: 70%;
+    justify-content: space-between;
+}
+
+.volume_slider {
+    width: 40%;
+}
+
+.current-time,
+.total-duration {
+padding: 5px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+padding: 10px;
+}
+
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward,
+p {
+cursor: pointer;
+}
+.randomActive{
+    color: #41a4a2;
+}
+
+/* //////////////////Artist container */
+#artist-container{
+    align-items: center;
+    display: flex;
+    width: 25%;
+    /* border: 2px solid rgb(10, 220, 122); */
+    justify-content: space-between;
+}
+#artist-image{
+    width:23%;
+    /* border: 2px solid palevioletred; */
+}
+#artist-image img{
+    width: 90%;
+    border-radius: 10px;
+
+}
+#artist-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+#like-dislike{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    /* border: 2px solid palevioletred; */
+    justify-content: space-around;
+}
+/* ...............................Playback controls...................................... */
+#controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    /* border:2px solid white; */
+}
+#playback-items{
+    display: flex;
+    justify-content: space-between;
+    width: 64%;
+    /* border:2px solid #00ff91; */
+    align-items: center;
+}
+#music-progress{
+    margin-top: 4px;
+    justify-content: space-between;
+    display: flex;
+    /* border:2px solid palevioletred; */
+    width: 100%;
+}
+#music-progress input{
+    width: 75%;
+}
+.music-start-end{
+    position: relative;
+    /* top: 0px; */
+    color: antiquewhite;
+    width: 10%;
+    /* border: 2px solid palevioletred; */
+}
+#music-progress p{
+margin-bottom: 0;
+}
+/* ////////////////////Volume controls ...............................................................*/
+#volume-controls{
+    width: 22%;
+    /* border: 2px solid red; */
+}
+#volume-controls{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 22%;
+    /* border: 2px solid rgb(10, 220, 122); */
+}
+#volume-range{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /* border: 2px solid orangered; */
+}
+#volume-range input{
+    width:100%;
+}
+/* ....................................MEDIA QUERY................................. */
+
+  @media (max-width: 768px){
+    #for-responsiveness{
+        flex-direction: column;
+    } 
+    aside{
+        display: none;
+    }
+    main{
+        width:100%;
+    }
+      #aside-Responsive{
+        display:flex;
+      }
+  }
+  
+
+@media (max-width: 1200px){
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px){
+    html {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 768px){
+    html {
+        font-size: 11px;
+    }
+    #like-dislike{
+        width: 32%;
+    }
+}
+
+@media (max-width: 576px){
+    html {
+        font-size: 9px;
+    }
+    #like-dislike{
+        width: 32%;
+    }
+}
+@media (max-width:365px){
+    html{
+        font-size: 7px;
+    }
+    #like-dislike{
+        width: 32%;
+    }
+}
+
+
+
+
+
+
+
+
+
